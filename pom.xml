@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.my.demo</groupId>
+    <artifactId>spring-boot-starter-hello</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>spring-boot-starter-hello</name>
+
+    <properties>
+        <spring-boot-version>2.4.5</spring-boot-version>
+    </properties>
+
+    <dependencies>
+        <!-- 该依赖可以处理自动配置(AutoConfiguration)类 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <!-- 该依赖非必须，作用是在properties文件中编写配置的时候，如果有对应的配置类，则会解析该类并给出提示 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+    </dependencies>
+</project>
